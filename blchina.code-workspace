@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "refactor"
+		},
+		{
+			"path": "doc"
 		}
 	]
 }
