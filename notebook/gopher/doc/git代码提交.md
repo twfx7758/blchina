@@ -1,0 +1,10 @@
+# 开发中遇到的 git 命令
+
+- git status 当前 git 项目的状态
+- git add 添加文件到暂存区
+- git commit -m'消息' 带上消息提交到仓库
+- 本地代码添加到远程仓库
+  - git remote add <name> <url> 示例：git remote add blchina https://github.com/twfx7758/blchina.git
+  - git push <name> 示例：git push blchina
+- git config --list 查看设置
+- git log 查看提交日志
