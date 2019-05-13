@@ -4,6 +4,6 @@ import (
 	"fmt"
 )
 
-func main(){
-	fmt.Println("a test mod")
+func main() {
+	fmt.Println("a mod test")
 }

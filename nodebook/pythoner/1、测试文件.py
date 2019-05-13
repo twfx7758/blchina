@@ -1,0 +1,2 @@
+msg = "wenbin"
+print(msg)
