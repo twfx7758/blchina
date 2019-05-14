@@ -38,6 +38,17 @@
   - 此处我们选择阿里开源的服务注册中心<font color=red>**nacos**</font>
   - sh startup.sh -m standalone (以单例方式开启 nacos)
 
-- seata-samples 编译
+- 开启 seata-server 服务（修改 mysql、nacos 配置）
+
+  - seata-server 服务[releases 地址](https://github.com/seata/seata/releases)
+
+    ```
+    sh seata-server.sh $LISTEN_PORT $STORE_MODE
+
+    e.g.
+
+    sh seata-server.sh 8091 file
+    ```
+
+- seata-samples 示例
   - github 地址：https://github.com/seata/seata-samples.git
-  -
