@@ -53,5 +53,4 @@
 - seata-samples 示例
   - github 地址：https://github.com/seata/seata-samples.git
 
-## **四、seata-server代码解析**
-
+## **四、seata-server 代码解析**
