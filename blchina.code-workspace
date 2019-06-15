@@ -17,6 +17,9 @@
 		},
 		{
 			"path": "notebook\\javaer"
+		},
+		{
+			"path": "notebook\\frontend"
 		}
 	]
 }
