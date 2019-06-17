@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--1、导入Vue的包-->
+    <script src="./lib/vuejs-2.5.21.js"></script>
+</head>
+
+<body>
+    <!-- 将来new的Vue实例，会控制这个元素中的所有内容-->
+    <div id="app">
+        <p>{{ msg }}</p>
+    </div>
+
+    <script>
+        // 2、创建一个Vue实例
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                msg: '欢迎学习Vue'
+            }
+        });
+    </script>
+</body>
+
+</html>
