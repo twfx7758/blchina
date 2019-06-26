@@ -40,6 +40,10 @@ package com.deepexi.application.workflow.task #orange {
     interface TaskHandler {
         +void handler(TaskContext context) throws Exception
     }
+    note bottom of TaskHandler
+    任务处理接口，所有任务的处理
+    都继承此接口
+    end note
 
     class SubscribeCustomerToShopHandler<<客户预约到店>> {
         +void handler(TaskContext context) throws Exception
