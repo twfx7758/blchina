@@ -20,7 +20,7 @@ class AlgorithmPoolHandler<<反射具体任务Handler>> {
 
 AlgorithmPoolHandler *--TaskServer
 
-namespace com.deepexi.application.workflow.template #green {
+package com.deepexi.application.workflow.template #green {
     interface TemplateParser {
         +List<UserTask> parseTempl(TaskContext taskContext) throws Exception
     }
@@ -28,9 +28,15 @@ namespace com.deepexi.application.workflow.template #green {
     interface TemplateGroupParser {
         +TaskGroup parseTempl(TaskContext taskContext) throws Exception;
     }
+
+    class impl.BoutiqueGroupParser {
+
+    }
+
+    TemplateGroupParser <|-- impl.BoutiqueGroupParser
 }
 
-namespace com.deepexi.application.workflow.task #orange {
+package com.deepexi.application.workflow.task #orange {
     interface TaskHandler {
         +void handler(TaskContext context) throws Exception
     }
@@ -41,6 +47,12 @@ namespace com.deepexi.application.workflow.task #orange {
 
     TaskHandler <|-- SubscribeCustomerToShopHandler
 
+}
+
+package com.deepexi.application.workflow.taskflow {
+    interface FlowTask {
+        +void next()
+    }
 }
 
 @enduml
