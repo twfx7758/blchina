@@ -29,8 +29,8 @@ class FlowTask<<生成下一步的任务>> {
         +void next(TaskContext context)
     }
 
-AlgorithmPoolHandler "1"--* TaskServer
-FlowTask "1"--* TaskServer
+AlgorithmPoolHandler <-- TaskServer
+FlowTask <-- TaskServer
 
 package com.deepexi.application.workflow.template #green {
     interface TemplateParser<<生成子任务>> {
