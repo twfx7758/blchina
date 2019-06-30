@@ -8,39 +8,75 @@ skinparam roundcorner 20
 skinparam sequenceArrowThickness 2
 'skinparam handwritten true
 
-class TaskServer<<对外暴露任务服务的能力>> {
-    +TemplateGroupDto taskGroupList(String taskGroupId,String myTpye)
+class TaskServer {
     +List<TemplateGroupDto> groupList(String role, String status) throws Exception
+    +TemplateGroupDto taskGroupList(String taskGroupId,String myTpye)
     +<T extends TemplateBase>  void taskHandler(TaskContext<T> context)
 }
+note bottom of TaskServer
+一、对外暴露任务服务的能力
+    1、用户当前角色下所有订单任务   
+    2、某一订单任务下所有的子任务
+    3、子任务的业务处理器
+        I、调用handler处理业务
+        II、生成此子任务下的下一步任务
+end note
 
 class AlgorithmPoolHandler<<反射具体任务Handler>> {
     +void invoke(TaskContext context) throws Exception
 }
+class FlowTask<<生成下一步的任务>> {
+        +void next(TaskContext context)
+    }
 
-AlgorithmPoolHandler *--TaskServer
+AlgorithmPoolHandler <-- TaskServer
+FlowTask <-- TaskServer
 
-namespace com.deepexi.application.workflow.template #green {
-    interface TemplateParser {
+package com.deepexi.application.workflow.template #green {
+    interface TemplateParser<<生成子任务>> {
         +List<UserTask> parseTempl(TaskContext taskContext) throws Exception
     }
 
-    interface TemplateGroupParser {
+    interface TemplateGroupParser<<生成订单任务>> {
         +TaskGroup parseTempl(TaskContext taskContext) throws Exception;
     }
 }
+package com.deepexi.application.workflow.template.impl #green {
+    class AccountingConfirmParser<<会计收尾款模板>> {
 
-namespace com.deepexi.application.workflow.task #orange {
-    interface TaskHandler {
-        +void handler(TaskContext context) throws Exception
     }
+}
+package com.deepexi.application.workflow.template.impl.group #green {
+    class BoutiqueGroupParser {
 
+    }
+}
+
+com.deepexi.application.workflow.template +-- com.deepexi.application.workflow.template.impl
+com.deepexi.application.workflow.template.impl +-- com.deepexi.application.workflow.template.impl.group
+
+TemplateGroupParser <|.. BoutiqueGroupParser
+TemplateParser <|.. AccountingConfirmParser
+
+package com.deepexi.application.workflow.task #orange {
+    interface TaskHandler<<任务处理接口>> {
+        +void handler(TaskContext context) throws Exception
+    }  
+}
+package com.deepexi.application.workflow.task.impl #orange {
     class SubscribeCustomerToShopHandler<<客户预约到店>> {
         +void handler(TaskContext context) throws Exception
     }
-
-    TaskHandler <|-- SubscribeCustomerToShopHandler
-
 }
+com.deepexi.application.workflow.task +-- com.deepexi.application.workflow.task.impl
+TaskHandler <|.. SubscribeCustomerToShopHandler 
+
+note "反射触发每一个任务的handler." as N1
+
+AlgorithmPoolHandler .. N1
+N1 .. TaskHandler
+
+note left of com.deepexi.application.workflow.task.impl: 此包实现所有子任务的handler
+
 
 @enduml

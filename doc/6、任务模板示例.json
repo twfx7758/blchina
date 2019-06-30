@@ -1,0 +1,10 @@
+{
+    "content": "订单调整",
+    "className": "",
+    "template2TaskParseName": "com.deepexi.application.workflow.template.impl.SubscribeOrderAdjustmenParser",
+    "type": "settings",
+    "repeat": "0",
+    "templateMakeOrderInSap": 6,
+    "templateSplitMoney": 7,
+    "url": "/staff/task-restructure/payment-setting"
+}
