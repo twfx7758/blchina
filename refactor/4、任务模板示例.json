@@ -8,3 +8,38 @@
     "templateSplitMoney": 7,
     "url": "/staff/task-restructure/payment-setting"
 }
+
+{
+    "content": "客户已提交意向订单\n请联系客户预约到店，并请设置到店时间",
+    "className": "com.deepexi.application.workflow.task.impl.SubscribeStoreHandler",
+    "template2TaskParseName": "com.deepexi.application.workflow.template.impl.SubToShopParser",
+    "type": "setTime",
+    "repeat": "1"
+}
+
+{
+    "content": "设置车辆交付时间",
+    "className": "com.deepexi.application.workflow.task.impl.SubscribeTimeToDeliverCarHandler",
+    "template2TaskParseName": "com.deepexi.application.workflow.template.impl.SubscribeTimeToDeliverCarParser",
+    "type": "settings"
+}
+
+{
+    "content": "请在sap进行结算操作",
+    "className": "com.deepexi.application.workflow.task.impl.BillingSapHandler",
+    "template2TaskParseName": "com.deepexi.application.workflow.template.impl.BillingSapParser"
+}
+
+{
+    "content": "客户面签设置",
+    "className": "com.deepexi.application.workflow.task.impl.FinanciaFaceSignatureHandler",
+    "template2TaskParseName": "com.deepexi.application.workflow.template.impl.GeneralTemplateParser"
+}
+
+{
+    "content": "请为客户分配前装车",
+    "className": "com.deepexi.application.workflow.task.impl.FrontCarHandler",
+    "template2TaskParseName": "com.deepexi.application.workflow.template.impl.FrontCarConfirmParser",
+    "lockCarTemplateId": 106,
+    "type": "settings"
+}
