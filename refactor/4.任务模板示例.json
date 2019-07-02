@@ -1,45 +1,34 @@
 {
     "content": "订单调整",
-    "className": "",
-    "template2TaskParseName": "com.deepexi.application.workflow.template.impl.SubscribeOrderAdjustmenParser",
-    "type": "settings",
-    "repeat": "0",
-    "templateMakeOrderInSap": 6,
-    "templateSplitMoney": 7,
-    "url": "/staff/task-restructure/payment-setting"
+    "templateParser": "com.deepexi.application.workflow.template.impl.SubscribeOrderAdjustmenParser",
+    "button": {
+        "setting": {
+            "type": "settings",
+            "repeat": "0",
+            "url": "/staff/task-restructure/payment-setting"
+        },
+        "action": {
+            "handler": "com.deepexi.application.workflow.task.impl.SubscribeStoreHandler"
+        }
+    },
+    "childTask": [
+        6,
+        7
+    ],
+    "activitiNode": "收银",
+    "message": {
+        "user": {
+            "template": ""
+        },
+        "customer": {
+            "template": ""
+        }
+    }
 }
 
 {
-    "content": "客户已提交意向订单\n请联系客户预约到店，并请设置到店时间",
-    "className": "com.deepexi.application.workflow.task.impl.SubscribeStoreHandler",
-    "template2TaskParseName": "com.deepexi.application.workflow.template.impl.SubToShopParser",
-    "type": "setTime",
-    "repeat": "1"
-}
-
-{
-    "content": "设置车辆交付时间",
-    "className": "com.deepexi.application.workflow.task.impl.SubscribeTimeToDeliverCarHandler",
-    "template2TaskParseName": "com.deepexi.application.workflow.template.impl.SubscribeTimeToDeliverCarParser",
-    "type": "settings"
-}
-
-{
-    "content": "请在sap进行结算操作",
-    "className": "com.deepexi.application.workflow.task.impl.BillingSapHandler",
-    "template2TaskParseName": "com.deepexi.application.workflow.template.impl.BillingSapParser"
-}
-
-{
-    "content": "客户面签设置",
-    "className": "com.deepexi.application.workflow.task.impl.FinanciaFaceSignatureHandler",
-    "template2TaskParseName": "com.deepexi.application.workflow.template.impl.GeneralTemplateParser"
-}
-
-{
-    "content": "请为客户分配前装车",
-    "className": "com.deepexi.application.workflow.task.impl.FrontCarHandler",
-    "template2TaskParseName": "com.deepexi.application.workflow.template.impl.FrontCarConfirmParser",
-    "lockCarTemplateId": 106,
-    "type": "settings"
+    "content": "客户金融分期已办理成功，已经获取批贷函",
+    "templateGroupParser": "com.deepexi.application.workflow.template.impl.LoanCompletionGroupParser",
+    "complateStatus": "",
+    "inComplateStatus": ""
 }
