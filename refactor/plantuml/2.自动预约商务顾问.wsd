@@ -17,10 +17,10 @@ activate AppLayer
 AppLayer ->Rocket: 2、发送自动预约消息
 activate Rocket
 
-Rocket -> AppLayer: 3、发送成功
+Rocket --> AppLayer: 3、发送成功
 deactivate Rocket
 
-AppLayer -> Customer: 4、下单成功
+AppLayer --> Customer: 4、下单成功
 deactivate Customer
 deactivate AppLayer
 
@@ -28,25 +28,25 @@ AppLayer -> Rocket: 6、订阅消息
 activate AppLayer
 activate Rocket
 
-Rocket -> AppLayer: 7、返回消息
+Rocket --> AppLayer: 7、返回消息
 deactivate Rocket
 
 AppLayer -> Center: 8、获取基础数据
 activate Center
 
-Center -> AppLayer: 9、返回
+Center --> AppLayer: 9、返回
 deactivate
 
 AppLayer -> WorkOrder: 10、创建主工单信息
 activate WorkOrder
 
-WorkOrder -> AppLayer: 11、返回
+WorkOrder --> AppLayer: 11、返回
 deactivate WorkOrder
 
 AppLayer -> WorkFLow: 12、开启工作流
 activate WorkFLow
 
-WorkFLow -> AppLayer: 13、返回
+WorkFLow --> AppLayer: 13、返回
 deactivate WorkFLow
 
 @enduml

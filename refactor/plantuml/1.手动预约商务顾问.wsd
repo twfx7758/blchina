@@ -15,22 +15,22 @@ activate AppLayer
 AppLayer -> Center: 2、获取基础数据
 activate Center
 
-Center -> AppLayer: 3、返回
+Center --> AppLayer: 3、返回
 deactivate
 
 AppLayer -> WorkOrder: 4、创建主工单信息
 activate WorkOrder
 
-WorkOrder -> AppLayer: 5、返回
+WorkOrder --> AppLayer: 5、返回
 deactivate WorkOrder
 
 AppLayer -> WorkFLow: 6、开启工作流
 activate WorkFLow
 
-WorkFLow -> AppLayer: 7、返回
+WorkFLow --> AppLayer: 7、返回
 deactivate WorkFLow
 
-AppLayer -> Customer: 8、预约成功
+AppLayer --> Customer: 8、预约成功
 deactivate AppLayer
 deactivate Customer
 
