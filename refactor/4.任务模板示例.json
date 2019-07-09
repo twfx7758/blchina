@@ -8,14 +8,17 @@
             "url": "/staff/task-restructure/payment-setting"
         },
         "action": {
-            "handler": "com.deepexi.application.workflow.task.impl.SubscribeStoreHandler"
+            "handler": "com.deepexi.application.workflow.task.impl.SubscribeStoreHandler",
+            "childTask": [
+                6,
+                7
+            ]
         }
     },
-    "childTask": [
-        6,
-        7
-    ],
-    "activitiNode": "收银",
+    "activity": {
+        "node": "收银",
+        "flow": false
+    },
     "message": {
         "user": {
             "template": ""
