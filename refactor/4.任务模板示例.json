@@ -1,5 +1,5 @@
 {
-    "content": "订单调整",
+    "content": "订单调整", 
     "templateParser": "com.deepexi.application.workflow.template.impl.SubscribeOrderAdjustmenParser",
     "button": {
         "setting": {
