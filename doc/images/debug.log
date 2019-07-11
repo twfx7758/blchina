@@ -1,2 +1,5 @@
 [0711/095653:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
 [0711/134113:INFO:exception_record.cc(518)] [QB]Process ID: 26808 Type: 2
+[0711/140538:INFO:exception_record.cc(518)] [QB]Process ID: 44592 Type: 2
+[0711/140542:WARNING:spdy_session.cc(2455)] Received HEADERS for invalid stream 7
+[0711/140542:WARNING:spdy_session.cc(2455)] Received HEADERS for invalid stream 9
