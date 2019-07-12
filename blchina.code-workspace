@@ -21,10 +21,6 @@
 			"path": "notebook\\sheller"
 		},
 		{
-			"name": "refactor",
-			"path": "refactor"
-		},
-		{
 			"name": "frontend",
 			"path": "notebook\\frontend"
 		},
