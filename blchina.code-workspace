@@ -1,27 +1,35 @@
 {
 	"folders": [
 		{
+			"name": "gopher",
 			"path": "notebook\\gopher"
 		},
 		{
+			"name": "pythoner",
 			"path": "notebook\\pythoner"
 		},
 		{
+			"name": "sheller",
 			"path": "notebook\\sheller"
 		},
 		{
+			"name": "refactor",
 			"path": "refactor"
 		},
 		{
-			"path": "doc"
-		},
-		{
+			"name": "javaer",
 			"path": "notebook\\javaer"
 		},
 		{
+			"name": "doc",
+			"path": "doc"
+		},
+		{
+			"name": "frontend",
 			"path": "notebook\\frontend"
 		},
 		{
+			"name": "umler",
 			"path": "notebook\\umler"
 		}
 	]
