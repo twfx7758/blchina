@@ -1,6 +1,14 @@
 {
 	"folders": [
 		{
+			"name": "doc",
+			"path": "doc"
+		},
+		{
+			"name": "javaer",
+			"path": "notebook\\javaer"
+		},
+		{
 			"name": "gopher",
 			"path": "notebook\\gopher"
 		},
@@ -15,14 +23,6 @@
 		{
 			"name": "refactor",
 			"path": "refactor"
-		},
-		{
-			"name": "javaer",
-			"path": "notebook\\javaer"
-		},
-		{
-			"name": "doc",
-			"path": "doc"
 		},
 		{
 			"name": "frontend",
