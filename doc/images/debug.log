@@ -3,3 +3,20 @@
 [0711/140538:INFO:exception_record.cc(518)] [QB]Process ID: 44592 Type: 2
 [0711/140542:WARNING:spdy_session.cc(2455)] Received HEADERS for invalid stream 7
 [0711/140542:WARNING:spdy_session.cc(2455)] Received HEADERS for invalid stream 9
+[0711/171225:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0711/172301:INFO:exception_record.cc(518)] [QB]Process ID: 11712 Type: 2
+[0711/232955:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0711/233000:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0711/233449:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0711/233449:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0711/233449:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0711/233450:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0711/234054:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0712/001051:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0712/001051:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0712/090135:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0712/090140:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0712/090142:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0712/090142:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0712/090143:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
+[0712/090143:WARNING:dns_config_service_win.cc(674)] Failed to read DnsConfig.
