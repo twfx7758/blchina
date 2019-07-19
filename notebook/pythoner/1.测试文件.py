@@ -1,2 +1,0 @@
-msg = "wenbin"
-print(msg)
