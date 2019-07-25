@@ -1,0 +1,20 @@
+@startuml
+
+
+|收银|
+
+start
+:收取定金;
+if (moby锁车?) then (yes)
+|商务顾问|
+:结束考虑期;
+else (no)
+|计划员|
+:sap建车;
+|商务顾问|
+:结束考虑期;
+endif
+
+stop
+
+@enduml
