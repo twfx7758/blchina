@@ -1,0 +1,36 @@
+@startuml
+
+'skinparam packageStyle rect
+skinparam backgroundColor #EEEBDC
+skinparam roundcorner 20
+skinparam sequenceArrowThickness 2
+'skinparam handwritten true
+
+interface Command{
+    +void execute();
+}
+
+class Light{
+    +void on();
+    +void off();
+}
+
+class LightOnCommand{
+    -Light light;
+    +LightOnCommand(Light light);
+    +void execute();
+}
+
+Command <|.. LightOnCommand
+Light --o LightOnCommand
+
+class Client { 
+    -Command slot;
+
+    +void setCommand(Command slot);
+    +void buttonWasPress();
+}
+
+LightOnCommand --o Client
+
+@enduml
