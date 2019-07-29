@@ -24,13 +24,20 @@ class LightOnCommand{
 Command <|.. LightOnCommand
 Light --o LightOnCommand
 
-class Client { 
+class Control {
+
     -Command slot;
 
     +void setCommand(Command slot);
     +void buttonWasPress();
 }
 
-LightOnCommand --o Client
+LightOnCommand --o Control
+
+class App{
+    static void main();
+}
+
+App --> Control
 
 @enduml
