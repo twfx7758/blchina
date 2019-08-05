@@ -1,7 +1,46 @@
 @startuml
 
 interface Component{
-    +void cost();
+    +void mothodA();
+    +void mothodB();
 }
+
+interface Decorator{
+    +void mothodA();
+    +void mothodB();
+}
+
+class ConcreateComponent{
+    Component component;
+    +void mothodA();
+    +void mothodB();
+}
+
+class ConcreateDecoratorA{
+    Component component;
+    +void mothodA();
+    +void mothodB();
+}
+
+class ConcreateDecoratorB{
+    Component component;
+
+    +void mothodA();
+    +void mothodB();
+}
+
+Component <|.. ConcreateComponent
+
+Component <|.. Decorator
+Decorator <|.. ConcreateDecoratorA
+Decorator <|.. ConcreateDecoratorB
+
+
+Component --* ConcreateDecoratorA
+Component --* ConcreateDecoratorB
+
+note right of Component #aqua
+    开放-关闭原则
+end note
 
 @enduml
