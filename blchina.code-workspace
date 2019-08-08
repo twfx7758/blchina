@@ -23,6 +23,9 @@
 		{
 			"name": "umler",
 			"path": "notebook\\umler"
+		},
+		{
+			"path": "notebook\\ruster"
 		}
 	]
 }
