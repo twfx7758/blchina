@@ -1,10 +1,6 @@
 {
 	"folders": [
 		{
-			"name": "doc",
-			"path": "doc"
-		},
-		{
 			"name": "javaer",
 			"path": "notebook\\javaer"
 		},
