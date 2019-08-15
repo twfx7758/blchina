@@ -23,5 +23,8 @@
 		{
 			"path": "notebook\\ruster"
 		}
-	]
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
 }
