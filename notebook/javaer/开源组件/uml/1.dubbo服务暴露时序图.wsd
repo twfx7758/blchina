@@ -1,0 +1,7 @@
+@startuml
+
+actor Spring as main
+participant DubboNamespaceHandler as dnh
+
+
+@enduml
