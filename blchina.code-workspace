@@ -22,6 +22,9 @@
 		},
 		{
 			"path": "notebook\\ruster"
+		},
+		{
+			"path": "notebook\\pythoner"
 		}
 	],
 	"settings": {
