@@ -25,6 +25,9 @@
 		},
 		{
 			"path": "notebook\\pythoner"
+		},
+		{
+			"path": "notebook\\c-c++"
 		}
 	],
 	"settings": {
