@@ -9,9 +9,11 @@
 			"path": "notebook\\gopher"
 		},
 		{
+			"name": "cplusplus",
 			"path": "notebook\\cplusplus"
 		},
 		{
+			"name": "others",
 			"path": "notebook\\others"
 		}
 	],
