@@ -9,25 +9,10 @@
 			"path": "notebook\\gopher"
 		},
 		{
-			"name": "sheller",
-			"path": "notebook\\sheller"
+			"path": "notebook\\cplusplus"
 		},
 		{
-			"name": "frontend",
-			"path": "notebook\\frontend"
-		},
-		{
-			"name": "umler",
-			"path": "notebook\\umler"
-		},
-		{
-			"path": "notebook\\ruster"
-		},
-		{
-			"path": "notebook\\pythoner"
-		},
-		{
-			"path": "notebook\\c-c++"
+			"path": "notebook\\others"
 		}
 	],
 	"settings": {
