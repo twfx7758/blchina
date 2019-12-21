@@ -1,20 +1,16 @@
 {
 	"folders": [
 		{
-			"name": "javaer",
-			"path": "notebook\\javaer"
+			"path": "notebook/javaer"
 		},
 		{
-			"name": "gopher",
-			"path": "notebook\\gopher"
+			"path": "notebook/cplusplus"
 		},
 		{
-			"name": "cplusplus",
-			"path": "notebook\\cplusplus"
+			"path": "notebook/gopher"
 		},
 		{
-			"name": "others",
-			"path": "notebook\\others"
+			"path": "notebook/others"
 		}
 	],
 	"settings": {
