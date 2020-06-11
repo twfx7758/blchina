@@ -1,5 +1,13 @@
 # Envoy Filter
 
+## libevent监听网络事件
+
+- accept
+- connect
+- read
+- write
+- 以上都由eventloop进行callback触发
+
 ## Listener Filter
 
     ```yaml config
@@ -8,7 +16,7 @@
         socket_address:
         address: 0.0.0.0
         port_value: 8888
-    listener_filters:
+      listener_filters:
         - name: envoy.filters.listener.proxy_protocol
         - name: envoy.filters.listener.original_src
         typed_config:
@@ -27,3 +35,7 @@
 ## Http Filter
 
 ## Other Filter
+
+## 参考资料
+
+- [小鸟笔记](https://www.lijiaocn.com/soft/envoy/listener-filter.html)
