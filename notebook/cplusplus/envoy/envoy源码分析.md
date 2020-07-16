@@ -140,16 +140,12 @@
 
 ## 参考资料
 
-- [ubuntu设置shadowsocks](https://github.com/iMeiji/shadowsocks_install/wiki)
 - [Istio Pilot 与 Envoy 的交互机制解读](https://blog.gmem.cc/interaction-between-istio-pilot-and-envoy)
 - [深入解读 Service Mesh 的数据面 Envoy](https://sq.163yun.com/blog/article/213361303062011904?utm_source=tuicool&utm_medium=referral)
 - [Envoy 学习笔记-齐全](https://blog.gmem.cc/envoy-study-note)
 - [小鸟笔记](https://www.lijiaocn.com/soft/envoy/)
 - [win10 使用 WSL 编译 Linux C++项目](https://cloud.tencent.com/developer/article/1360467)
 - [Building Envoy with Bazel](https://github.com/envoyproxy/envoy/blob/master/bazel/README.md#installing-bazelisk-as-bazel)
-- [开发基于 Envoy 的高性能服务网关](http://wweir.cc/post/%E5%BC%80%E5%8F%91%E5%9F%BA%E4%BA%8E-envoy-%E7%9A%84%E9%AB%98%E6%80%A7%E8%83%BD%E6%9C%8D%E5%8A%A1%E7%BD%91%E5%85%B3/)
-- [envoy 源码分析](https://www.cnblogs.com/mathli/tag/envoy%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/)
-- [window 下 jetBrains Clion 使用 wsl 安装配置 c++开发神器](https://blog.csdn.net/u010606602/article/details/80782650)
 - [Ubuntu14.04 默认 cmake 升级为 3.x](http://www.mamicode.com/info-detail-2197817.html)
 - [如何在 Ubuntu 18.04 上安装 GCC 编译器](https://www.linuxidc.com/Linux/2019-06/159059.htm)
 - [Building Envoy with Bazel](https://github.com/envoyproxy/envoy/blob/master/bazel/README.md#quick-start-bazel-build-for-developers)
@@ -157,3 +153,4 @@
 - [Effective Modern C++解读](https://blog.csdn.net/zhangyifei216/article/category/9266963/2)
 - [【Envoy 源码解析（一）】Envoy 启动](https://blog.csdn.net/surlymo/article/details/82191875)
 - [Envoy 中的 xDS REST 和 gRPC 协议详解](https://juejin.im/post/5baedb6f5188255c38536f58)
+- [WebAssembly在Istio中做Header Filter的示例](https://developer.aliyun.com/article/752771)
