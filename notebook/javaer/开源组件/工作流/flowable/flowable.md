@@ -13,3 +13,8 @@ nohup docker run -p 8080:8080 flowable/all-in-one &
 - [flowable-task](http://192.168.186.23:8080/flowable-task)
 - [flowable-admin](http://192.168.186.23:8080/flowable-admin)
 - [flowable-rest](http://192.168.186.23:8080/flowable-rest/docs)
+
+## 参考资料
+
+- [Flowable框架](https://www.jianshu.com/p/63bf76bda4ec)
+- [Flowable-Modeler集成](https://blog.csdn.net/houyj1986/article/details/86027301)
