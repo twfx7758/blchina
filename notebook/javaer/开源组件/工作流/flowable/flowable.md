@@ -6,6 +6,13 @@
 nohup docker run -p 8080:8080 flowable/all-in-one &
 ```
 
+## 项目build
+
+```build
+./mvnw clean package -DskipTests -Pdeploy -Dmaven.javadoc.skip=true
+./mvnw clean install -DskipTests -Pdeploy -Dmaven.javadoc.skip=true
+```
+
 ## 管理地址
 
 - [flowable-idm](http://192.168.186.23:8080/flowable-idm)
