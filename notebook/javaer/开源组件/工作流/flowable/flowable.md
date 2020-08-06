@@ -8,7 +8,6 @@ nohup docker run -p 8080:8080 flowable/all-in-one &
 
 ## 项目build
 
-<<<<<<< HEAD
 ```build flowable engine
 ./mvnw clean package -DskipTests -Pdeploy -Dmaven.javadoc.skip=true -Dgpg.skip
 ./mvnw clean install -DskipTests -Pdeploy -Dmaven.javadoc.skip=true -Dgpg.skip
@@ -16,11 +15,6 @@ nohup docker run -p 8080:8080 flowable/all-in-one &
 
 ```build flow-ui
 mvn clean install -DskipTests -Pdeploy -Dmaven.javadoc.skip=true -Dgpg.skip
-=======
-```build
-./mvnw clean package -DskipTests -Pdeploy -Dmaven.javadoc.skip=true -Dgpg.skip
-./mvnw clean install -DskipTests -Pdeploy -Dmaven.javadoc.skip=true -Dgpg.skip
->>>>>>> 6f3cb4f6f1d4bdb9e635805b256c747d6941dc5a
 ```
 
 ## 管理地址
