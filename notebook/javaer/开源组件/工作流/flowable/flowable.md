@@ -2,7 +2,7 @@
 
 ## docker部署
 
-```deployment
+```demo deployment
 nohup docker run -p 8080:8080 flowable/all-in-one &
 ```
 
