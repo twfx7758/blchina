@@ -8,9 +8,13 @@ nohup docker run -p 8080:8080 flowable/all-in-one &
 
 ## 项目build
 
-```build
-./mvnw clean package -DskipTests -Pdeploy -Dmaven.javadoc.skip=true
-./mvnw clean install -DskipTests -Pdeploy -Dmaven.javadoc.skip=true
+```build flowable engine
+./mvnw clean package -DskipTests -Pdeploy -Dmaven.javadoc.skip=true -Dgpg.skip
+./mvnw clean install -DskipTests -Pdeploy -Dmaven.javadoc.skip=true -Dgpg.skip
+```
+
+```build flow-ui
+mvn clean install -DskipTests -Pdeploy -Dmaven.javadoc.skip=true -Dgpg.skip
 ```
 
 ## 管理地址
