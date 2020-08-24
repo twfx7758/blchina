@@ -15,6 +15,10 @@ nohup docker run -p 8080:8080 flowable/all-in-one &
 
 ```build flow-ui
 mvn clean install -DskipTests -Ppostgres -Dmaven.javadoc.skip=true -Dgpg.skip
+
+mvn install -PbuildRestappDependencies,content,coverage,deploy,distro,dmn,nodocs,nofail -DskipTest
+s -Dmaven.javadoc.skip=true -Dgpg.skip
+
 ```
 
 ## 管理地址
