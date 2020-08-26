@@ -3,7 +3,7 @@
 ## docker部署
 
 ```demo deployment
-nohup docker run -p 8080:8080 flowable/all-in-one &
+docker run -d -p 8080:8080 flowable/all-in-one
 ```
 
 ## 项目build
@@ -28,6 +28,11 @@ s -Dmaven.javadoc.skip=true -Dgpg.skip
 - [flowable-task](http://192.168.186.23:8080/flowable-task)
 - [flowable-admin](http://192.168.186.23:8080/flowable-admin)
 - [flowable-rest](http://192.168.186.23:8080/flowable-rest/docs)
+
+  ```port
+  firewall-cmd --zone=public --add-port=8080/tcp --permanent
+  firewall-cmd --reload
+  ```
 
 ## 参考资料
 
