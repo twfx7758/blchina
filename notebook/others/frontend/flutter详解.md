@@ -12,8 +12,11 @@
 - 问题
 
   - flutter build apk 安装release 运行闪退
-  - 解决：flutter build apk --no-shrink
-  - 原因：flutter build apk默认会开启R8压缩，flutter run --release没有，所以出错
+    - 解决：flutter build apk --no-shrink
+    - 原因：flutter build apk默认会开启R8压缩，flutter run --release没有，所以出错
+
+  - AndroidX问题
+    - 解决：build.gradle->targetSdkVersion 28->compileSdkVersion 28
 
 ## 参考资料
 
