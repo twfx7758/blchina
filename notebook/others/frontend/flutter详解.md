@@ -7,6 +7,14 @@
 - flutter run -d chrome
 - flutter build web
 
+## 打包
+
+- 问题
+
+  - flutter build apk 安装release 运行闪退
+  - 解决：flutter build apk --no-shrink
+  - 原因：flutter build apk默认会开启R8压缩，flutter run --release没有，所以出错
+
 ## 参考资料
 
 - [Using Flutter in China](https://flutter.dev/community/china)
