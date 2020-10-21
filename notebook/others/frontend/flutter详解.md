@@ -18,6 +18,13 @@
   - AndroidX问题
     - 解决：build.gradle->targetSdkVersion 28->compileSdkVersion 28
 
+- ios打包
+
+  ```ios
+  1、flutter build ios --release
+  2、再到xcode里打包，生成ipa
+  ```
+
 ## 第三方包
 
 - 2d动画
