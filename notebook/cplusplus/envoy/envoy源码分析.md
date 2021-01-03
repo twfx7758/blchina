@@ -154,3 +154,4 @@
 - [【Envoy 源码解析（一）】Envoy 启动](https://blog.csdn.net/surlymo/article/details/82191875)
 - [Envoy 中的 xDS REST 和 gRPC 协议详解](https://juejin.im/post/5baedb6f5188255c38536f58)
 - [WebAssembly在Istio中做Header Filter的示例](https://developer.aliyun.com/article/752771)
+- [编译 envoy 1.16 的其它方式](https://blog.csdn.net/u014458692/article/details/109108709)
