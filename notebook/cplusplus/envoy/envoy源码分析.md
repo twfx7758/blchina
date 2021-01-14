@@ -79,7 +79,7 @@
 
 - bazellist 安装
 
-  - wget -e "http_proxy=socks5://127.0.0.1:1080" http://www.subversion.org.cn/svnbook/1.4/ -O /usr/local/bin/bazel https://github.com/bazelbuild/bazelisk/releases/download/v0.0.8/bazelisk-linux-amd64
+  - wget -e "http_proxy=socks5://127.0.0.1:1080" http://www.subversion.org.cn/svnbook/1.4/ -O /usr/local/bin/bazel https://github.com/bazelbuild/bazelisk/releases/download/v1.7.1/bazelisk-linux-amd64
   - chmod +x /usr/local/bin/bazel
 
 - 命令行解析库-tclap
@@ -154,3 +154,4 @@
 - [【Envoy 源码解析（一）】Envoy 启动](https://blog.csdn.net/surlymo/article/details/82191875)
 - [Envoy 中的 xDS REST 和 gRPC 协议详解](https://juejin.im/post/5baedb6f5188255c38536f58)
 - [WebAssembly在Istio中做Header Filter的示例](https://developer.aliyun.com/article/752771)
+- [编译 envoy 1.16 的其它方式](https://blog.csdn.net/u014458692/article/details/109108709)
