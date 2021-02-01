@@ -1,0 +1,19 @@
+java 
+-Djava.security.egd=file:/dev/./urandom 
+-server 
+-XX:MetaspaceSize=256M 
+-XX:MaxMetaspaceSize=512m 
+-Xms2048M 
+-Xmx2048M 
+-XX:MaxNewSize=512M
+-XX:+UseG1GC 
+-XX:+HeapDumpOnOutOfMemoryError 
+-XX:HeapDumpPath=/home/logs/java.hprof 
+-javaagent:/home/agent/skywalking-agent.jar 
+-Dskywalking.agent.service_name=xbo-member-center 
+-Dskywalking.collector.backend_service=apm-skywalking-oap:11800 
+-javaagent:/home/arthas/arthas-agent.jar 
+-jar /home/app.jar 
+--spring.profiles.active=prd 
+--spring.cloud.nacos.config.server-addr=nacos-bdc-prd.xbocloud.cn:80 
+--server.port=8001
