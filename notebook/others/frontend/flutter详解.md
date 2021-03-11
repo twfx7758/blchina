@@ -18,6 +18,14 @@
   - AndroidX问题
     - 解决：build.gradle->targetSdkVersion 28->compileSdkVersion 28
 
+  - android打包
+
+    ```android
+    maven { url 'https://maven.aliyun.com/repository/google' }
+    maven { url 'https://maven.aliyun.com/repository/jcenter' }
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
+    ```
+
 - ios打包
 
   ```ios
